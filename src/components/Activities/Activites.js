@@ -1,12 +1,20 @@
 import React from 'react';
+import { useState } from 'react';
 import './Activites.css';
 
 const Activites = ({songs}) => {
+  const [breakTime, setBreakTime] = useState(false);
+  const getBreakTimeFromLC = localStorage.getItem("break-time");
+  const handleBreakTime = event =>{
+    setBreakTime(event.target.textContent);
+    localStorage.setItem("break-time", event.target.textContent);
+  }
+  
   let totalListenTime = 0;
   for(const song of songs){
     totalListenTime += song.duration;
   }
-  
+ 
   return (
     <div className='activities'>
         <h2 className='name'>Md Tanin Rahman</h2>
@@ -27,15 +35,21 @@ const Activites = ({songs}) => {
         </div>
         <h2>Add a Break</h2>
         <div className="break-time">
-          <span>20s</span>
-          <span>15s</span>
-          <span>10s</span>
-          <span>25s</span>
+          <span onClick={handleBreakTime} className='break-element'>20s</span>
+          <span onClick={handleBreakTime} className='break-element'>15s</span>
+          <span onClick={handleBreakTime} className='break-element'>10s</span>
+          <span onClick={handleBreakTime} className='break-element'>25s</span>
         </div>
         <div className="listen-details">
           <h2>Listen Details</h2>
-          <p>Listen Time:   {totalListenTime} minute</p>
-          <p>Break Time</p>
+          <div className='listen-time'>
+            <p>Listen Time</p>
+            <p>{totalListenTime} minute</p>
+          </div>
+          <div className='break-time'>
+            <p>Break Time</p>
+            <p>{getBreakTimeFromLC}</p>
+          </div>
         </div>
         <button className='complited-btn'>Activity Complited</button>
     </div>
