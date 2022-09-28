@@ -1,5 +1,6 @@
 .song{
-  border: 1px solid lightgray;
+  border: 1px solid gray;
+  background: rgb(236, 230, 230);
   padding: 15px;
   border-radius: 10px;
   position: relative;
@@ -13,7 +14,7 @@
   position: absolute;
   bottom: 15px;
   width: 91%;
-  background: orangered;
+  background: rgb(101, 101, 192);
   padding: 10px;
   border-radius: 8px;
   border: none;

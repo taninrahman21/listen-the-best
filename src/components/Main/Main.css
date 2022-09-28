@@ -1,8 +1,9 @@
 .main-container{
   display: flex;
-  
+  margin-right: 0;
 }
 .songs-container{
-  width: 70%;
-  margin: 80px 100px;
+  width: 68%;
+  padding: 80px 100px;
+  background: rgb(243, 240, 240);
 }
