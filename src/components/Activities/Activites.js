@@ -1,13 +1,21 @@
 import React from 'react';
 import { useState } from 'react';
 import './Activites.css';
+import {ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// toast.configure()
 
-const Activites = ({songs}) => {
+const Activities = ({songs}) => {
   const [breakTime, setBreakTime] = useState(false);
   const getBreakTimeFromLC = localStorage.getItem("break-time");
   const handleBreakTime = event =>{
     setBreakTime(event.target.textContent);
     localStorage.setItem("break-time", event.target.textContent);
+  }
+  const notify = ()=>{
+    toast.success("Your activities is Totally Complited!", {
+      position: toast.POSITION.TOP_CENTER
+    });
   }
   
   let totalListenTime = 0;
@@ -48,12 +56,13 @@ const Activites = ({songs}) => {
           </div>
           <div className='break-time'>
             <p>Break Time</p>
-            <p>{getBreakTimeFromLC}</p>
+            <p>{breakTime ? breakTime : getBreakTimeFromLC}</p>
           </div>
         </div>
-        <button className='complited-btn'>Activity Complited</button>
+        <button onClick={notify} className='complited-btn'>Activity Complited</button>
+        <ToastContainer/>
     </div>
   );
 };
 
-export default Activites;
+export default Activities;
