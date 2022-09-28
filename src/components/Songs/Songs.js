@@ -5,7 +5,7 @@ import data from '../../songs.json';
 const Songs = () => {
   return (
     <div>
-      <h3>Select Todays Best</h3>
+      <h3>Select Today's Best</h3>
     <div className='song-container'>
     {
         data.map(song => <Song

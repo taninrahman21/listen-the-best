@@ -10,7 +10,8 @@ const Song = ({song}) => {
       <h2>{name}</h2>
       <p>{details}</p>
       <p>Album: {album}</p>
-      <p>Song Duration: {duration}minite</p>
+      <p>Song Duration: {duration} minute</p>
+      <button className='add-btn'>Add To List</button>
     </div>
   );
 };

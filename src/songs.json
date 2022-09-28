@@ -9,42 +9,42 @@
   },
   {
     "id": 2,
-    "name": "Yummy",
-    "cover": "songcover/yummy.jpg",
-    "details": "After four years Justin is back with some cool musics.Yummy is one of them",
-    "album": "Changes",
+    "name": "AS I AM",
+    "cover": "songcover/as i am.jpg",
+    "details": "After Changes Album Justin publish Justice.As i am is one of them.",
+    "album": "Justice",
     "duration": 3
   },
   {
     "id": 3,
-    "name": "Yummy",
-    "cover": "songcover/yummy.jpg",
-    "details": "After four years Justin is back with some cool musics.Yummy is one of them",
-    "album": "Changes",
+    "name": "Ghost",
+    "cover": "songcover/ghost.jpeg",
+    "details": "After Changes Album Justin publish Justice.Ghost is one of them.",
+    "album": "Justice",
     "duration": 3
   },
   {
     "id": 4,
-    "name": "Yummy",
-    "cover": "songcover/yummy.jpg",
-    "details": "After four years Justin is back with some cool musics.Yummy is one of them",
+    "name": "Intention",
+    "cover": "songcover/intention.jpeg",
+    "details": "Intention is the Most popular song from Changes.Intention was at the top on Billboard Hot 100.",
     "album": "Changes",
     "duration": 3
   },
   {
     "id": 5,
-    "name": "Yummy",
-    "cover": "songcover/yummy.jpg",
-    "details": "After four years Justin is back with some cool musics.Yummy is one of them",
-    "album": "Changes",
+    "name": "Peaches",
+    "cover": "songcover/peaches.jpg",
+    "details": "After Changes Album Justin publish Justice.Peaches is one of them.It was no.1 on Hot 200 Charts.",
+    "album": "Justice",
     "duration": 3
   },
   {
     "id": 6,
-    "name": "Yummy",
-    "cover": "songcover/yummy.jpg",
-    "details": "After four years Justin is back with some cool musics.Yummy is one of them",
-    "album": "Changes",
+    "name": "Somebody",
+    "cover": "songcover/somebody.jpg",
+    "details": "After Changes Album Justin publish Justice.Somebody is one of them.",
+    "album": "Justice",
     "duration": 3
   }
 ]
