@@ -1,8 +1,7 @@
 import React from 'react';
 import './Song.css';
 
-const Song = ({song}) => {
-  console.log(song)
+const Song = ({song,handleAddToCart}) => {
   const {name, cover, details, duration, album} = song;
   return (
     <div className='song'>
@@ -11,7 +10,7 @@ const Song = ({song}) => {
       <p>{details}</p>
       <p>Album: {album}</p>
       <p>Song Duration: {duration} minute</p>
-      <button className='add-btn'>Add To List</button>
+      <button onClick={()=>handleAddToCart(song)} className='add-btn'>Add To List</button>
     </div>
   );
 };

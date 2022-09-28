@@ -1,7 +1,12 @@
 import React from 'react';
 import './Activites.css';
 
-const Activites = () => {
+const Activites = ({songs}) => {
+  let totalListenTime = 0;
+  for(const song of songs){
+    totalListenTime += song.duration;
+  }
+  
   return (
     <div className='activities'>
         <h2 className='name'>Md Tanin Rahman</h2>
@@ -29,7 +34,7 @@ const Activites = () => {
         </div>
         <div className="listen-details">
           <h2>Listen Details</h2>
-          <p>Listen Time</p>
+          <p>Listen Time:   {totalListenTime} minute</p>
           <p>Break Time</p>
         </div>
         <button className='complited-btn'>Activity Complited</button>

@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import data from '../../songs.json';
 import Activites from '../Activities/Activites';
 import Songs from '../Songs/Songs';
 import './Main.css';
 
 const Main = () => {
+  const [songs, setSongs] = useState([]);
+
+  const handleAddToCart = (selectedSong) => {
+    const songsArray = [...songs, selectedSong];
+    console.log("clicked");
+    setSongs(songsArray)
+  }
+
   return (
     <div className='main-container'>
       <div className='songs-container'>
       <h2>LISTEN-THE-BEST</h2>
-      <Songs></Songs>
+      <Songs songs={data} handleAddToCart={handleAddToCart}></Songs>
       </div>
-      <Activites></Activites>
+      <Activites songs={songs}></Activites>
     </div>
   );
 };
