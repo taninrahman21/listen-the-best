@@ -10,7 +10,6 @@ const Main = () => {
 
   const handleAddToCart = (selectedSong) => {
     const songsArray = [...songs, selectedSong];
-    console.log("clicked");
     setSongs(songsArray)
   }
 
