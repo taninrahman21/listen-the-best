@@ -23,7 +23,9 @@ const Main = () => {
         </div>
       <Songs songs={data} handleAddToCart={handleAddToCart}></Songs>
       </div>
+      <div className='activities-container'>
       <Activites songs={songs}></Activites>
+      </div>
     </div>
   );
 };
