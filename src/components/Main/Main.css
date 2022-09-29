@@ -1,6 +1,5 @@
 .main-container{
   display: flex;
-  margin-right: 0;
 }
 .songs-container{
   width: 68%;
@@ -9,4 +8,15 @@
 }
 .site-header img{
   width: 100px;
+}
+@media screen and (max-width: 567px) {
+  .main-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .songs-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 50px;
+  }
 }

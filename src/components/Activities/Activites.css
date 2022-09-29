@@ -1,8 +1,8 @@
 .activities{
   text-align: center;
-}
-.activities{
   padding: 20px;
+  position: sticky;
+  top: 0;
 }
 .name{
   margin-bottom: 0px;
@@ -28,6 +28,7 @@
   padding: 15px;
 }
 .break-time span{
+  background: white;
   padding: 10px;
   border-radius: 10px;
   margin: 7px;

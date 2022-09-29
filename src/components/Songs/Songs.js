@@ -1,3 +1,4 @@
+import Blog from '../Blog/Blog';
 import Song from '../Song/Song';
 import './Songs.css';
 
@@ -15,6 +16,7 @@ const Songs = ({songs, handleAddToCart}) => {
            ></Song>)
       }
     </div>
+    <Blog></Blog>
     </div>
   );
 };
