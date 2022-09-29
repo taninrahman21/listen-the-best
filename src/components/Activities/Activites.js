@@ -24,8 +24,8 @@ const Activities = ({songs}) => {
   }
  
   return (
-    <div>
-        <div className="activities">
+    <div className='activities'>
+        <div>
         <h2 className='name'>Md Tanin Rahman</h2>
         <p className='title'>Front-End Web Devloper</p>
         <div className="details">
