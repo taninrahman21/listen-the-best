@@ -25,7 +25,6 @@ const Activities = ({songs}) => {
  
   return (
     <div className='activities'>
-        <div>
         <h2 className='name'>Md Tanin Rahman</h2>
         <p className='title'>Front-End Web Devloper</p>
         <div className="details">
@@ -62,7 +61,6 @@ const Activities = ({songs}) => {
         </div>
         <button onClick={notify} className='complited-btn'>Activity Complited</button>
         <ToastContainer/>
-        </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Songs = ({songs, handleAddToCart}) => {
 
   return (
     <div>
-      <h3>Select Today's Best</h3>
+      <h3 className='song-header'>Select Today's Best</h3>
     <div className='song-container'>
       {
         songs.map(song => <Song

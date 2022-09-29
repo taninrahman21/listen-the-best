@@ -1,3 +1,11 @@
 .blogs-title{
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.blog{
+  padding: 0 25px;
+}
+.blog h2{
+  margin-top: 0;
 }

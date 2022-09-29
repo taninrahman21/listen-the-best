@@ -1,9 +1,10 @@
 .main-container{
   display: flex;
+  box-sizing: border-box;
 }
 .songs-container{
-  width: 68%;
-  padding: 80px 100px;
+  width: 80%;
+  padding: 50px 100px;
   background: rgb(243, 240, 240);
 }
 .site-header img{
@@ -15,23 +16,17 @@
     justify-content: center;
   }
   .songs-container{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 40px 50px;
+    padding: 0;
+  }
+  .site-header{
+    text-align: center;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 992px){
   .main-container{
     flex-direction: column;
-    justify-content: center;
-  }
-  .songs-container{
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px 50px;
-  }
-  .activities-container{
-    width: 65%;
-    margin: 0 auto;
   }
 }

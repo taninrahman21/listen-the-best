@@ -6,6 +6,11 @@
 @media screen and (max-width: 567px) {
   .song-container{
     grid-template-columns: repeat(1,1fr);
+    padding: 10px 50px;
+  }
+  .song-header{
+    text-align: center;
+    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 992px){

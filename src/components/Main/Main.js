@@ -20,7 +20,7 @@ const Main = () => {
           <img src={logo} alt="" />
           <h2>LISTEN-THE-BEST</h2>
         </div>
-      <Songs songs={data} handleAddToCart={handleAddToCart}></Songs>
+        <Songs songs={data} handleAddToCart={handleAddToCart}></Songs>
       </div>
       <div className='activities-container'>
       <Activites songs={songs}></Activites>
